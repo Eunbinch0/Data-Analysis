@@ -37,74 +37,6 @@
       }
     },
     {
-      "cell_type": "markdown",
-      "source": [
-        "## 4-1 CSV 파일 읽기"
-      ],
-      "metadata": {
-        "id": "-I7BVVlnRrB0"
-      }
-    },
-    {
-      "cell_type": "markdown",
-      "source": [
-        "## 4-2 JSON 파일 읽기\n",
-        "\n"
-      ],
-      "metadata": {
-        "id": "9kHCFaGlRrE0"
-      }
-    },
-    {
-      "cell_type": "markdown",
-      "source": [
-        "## 4-3 텍스트 파일 읽기 및 데이터 추출"
-      ],
-      "metadata": {
-        "id": "uLd_3A_IRrHG"
-      }
-    },
-    {
-      "cell_type": "markdown",
-      "source": [
-        "## 4-4 Open-Meteo의 무료 날씨 API를 통한 특정 지역 온도 조회"
-      ],
-      "metadata": {
-        "id": "eOMufu5SXiAU"
-      }
-    },
-    {
-      "cell_type": "markdown",
-      "source": [
-        "## 4-5 Selenium과 lxml을 이용한 웹 스크래핑"
-      ],
-      "metadata": {
-        "id": "RLfPaa1ZiqIC"
-      }
-    },
-    {
-      "cell_type": "markdown",
-      "source": [
-        "\n",
-        "# 실습 시나리오"
-      ],
-      "metadata": {
-        "id": "Bu6OMZyGirOq"
-      }
-    },
-    {
-      "cell_type": "markdown",
-      "source": [
-        "## 공공데이터 포털 가입 및 데이터 신청\n",
-        "\n",
-        "- [https://www.data.go.kr](https://www.data.go.kr)\n",
-        "- 한국환경공단 에어코리아 대기오염정보 데이터 신청"
-      ],
-      "metadata": {
-        "id": "nsuqRN9RkZlW"
-      }
-    },
-    {
       "cell_type": "code",
       "source": [
         "import requests\n",
@@ -167,11 +99,11 @@
         "print(response.json())"
       ],
       "metadata": {
-        "id": "g105oGKAYLMw",
-        "outputId": "3fb01c0b-784e-4999-d86e-b12ef5f002d6",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "g105oGKAYLMw",
+        "outputId": "3fb01c0b-784e-4999-d86e-b12ef5f002d6"
       },
       "execution_count": 10,
       "outputs": [
@@ -244,11 +176,12 @@
         "print('전체 건수:', len(all_data))"
       ],
       "metadata": {
-        "id": "Em-CeOcsVl53",
-        "outputId": "a9cbdf7a-a394-44c7-a7d8-4b555e904e12",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "collapsed": true,
+        "id": "Em-CeOcsVl53",
+        "outputId": "a9cbdf7a-a394-44c7-a7d8-4b555e904e12"
       },
       "execution_count": 13,
       "outputs": [
@@ -2960,11 +2893,11 @@
         "df.info()"
       ],
       "metadata": {
-        "id": "cWrbst14qw6z",
-        "outputId": "16adeb97-cfab-48c5-aa96-76be61cf66b6",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "cWrbst14qw6z",
+        "outputId": "16adeb97-cfab-48c5-aa96-76be61cf66b6"
       },
       "execution_count": 15,
       "outputs": [
@@ -3051,11 +2984,11 @@
         "df.info()"
       ],
       "metadata": {
-        "id": "j1Mq3cg0sedd",
-        "outputId": "15313dc6-bf66-48bf-d784-33fdd27ee05f",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "j1Mq3cg0sedd",
+        "outputId": "15313dc6-bf66-48bf-d784-33fdd27ee05f"
       },
       "execution_count": 16,
       "outputs": [
@@ -3140,11 +3073,11 @@
         "print(df[['exmn_ymd', 'year', 'season']])"
       ],
       "metadata": {
-        "id": "3DqDLc1_ulFW",
-        "outputId": "9bc08a68-5a56-4728-9dbf-4c105ce6f9ad",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "3DqDLc1_ulFW",
+        "outputId": "9bc08a68-5a56-4728-9dbf-4c105ce6f9ad"
       },
       "execution_count": 18,
       "outputs": [
@@ -3178,11 +3111,11 @@
         "!rm ~/.cache/matplotlib -rf"
       ],
       "metadata": {
-        "id": "_H2byaxdznK9",
-        "outputId": "8219e2f1-b2bb-4f4c-ed90-aa18b61912c7",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "_H2byaxdznK9",
+        "outputId": "8219e2f1-b2bb-4f4c-ed90-aa18b61912c7"
       },
       "execution_count": 28,
       "outputs": [
@@ -3257,12 +3190,13 @@
         "plt.show()"
       ],
       "metadata": {
-        "id": "uG19ufdo1_6h",
-        "outputId": "9ef5083a-fb05-4781-84f5-7964afbc0505",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 469
-        }
+        },
+        "collapsed": true,
+        "id": "uG19ufdo1_6h",
+        "outputId": "9ef5083a-fb05-4781-84f5-7964afbc0505"
       },
       "execution_count": 40,
       "outputs": [
@@ -3295,12 +3229,12 @@
         "plt.show()"
       ],
       "metadata": {
-        "id": "5A-rVp6b2Pe4",
-        "outputId": "92147816-f59a-4744-8350-6129acc93575",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 469
-        }
+        },
+        "id": "5A-rVp6b2Pe4",
+        "outputId": "92147816-f59a-4744-8350-6129acc93575"
       },
       "execution_count": 41,
       "outputs": [
@@ -3336,12 +3270,12 @@
         "plt.show()"
       ],
       "metadata": {
-        "id": "P40GnO5p2tPp",
-        "outputId": "2951e1bc-1f2e-4a0c-cfe3-85379ef2b476",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 487
-        }
+        },
+        "id": "P40GnO5p2tPp",
+        "outputId": "2951e1bc-1f2e-4a0c-cfe3-85379ef2b476"
       },
       "execution_count": 42,
       "outputs": [
